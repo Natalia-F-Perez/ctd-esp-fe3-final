@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.favButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(110, 109, 109, 0.116);
+  padding: 10px;
+  border: 1px solid transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.favButton:hover {
+  border-color: rgb(59, 59, 202);
+  background-color: #5aadff;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 100vw;
+  box-sizing: border-box;
+  background-color: #f0efef;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(136, 136, 136);
+}
+
+footer {
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  height: 40px;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer>img {
+  width: 200px;
+  margin: 0;
+}
+
+footer>p {
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+
+.footer.light .social-icon {
+  color: #000000;
+}
+
+.footer.dark .social-icon {
+  color: #ffffff;
+}
+
+.logo img {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+  transform: translateY(-5px);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  justify-content: cen;
+}
+
+.star-icon {
+  color: gold;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark {
+  background-color: rgb(136, 136, 136);
+  color: white;
+}
+
+.dark>a {
+  color: white;
+}
+
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.card.light {
+  background-color: #fff;
+  color: #575656;
+  border-color: #454444;
+}
+
+.card.dark {
+  background-color: rgb(136, 136, 136);
+  color: #fff;
+  border-color: #fcfbfb;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 999;
+}
+
+.notification.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification.light {
+  background-color: #1e90ff;
+  color: #ffffff;
+}
+
+.notification.dark {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.brand-d {
+  color: #e91e63;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+}
+
+.navbar.dark .nav-links a {
+  color: #fff;
+}
+
+.navbar.dark .nav-links a:hover {
+  color: #e91e63;
+}
+
+.nav-links.dark {
+  background-color: black;
+}
+
+.nav-links.dark a {
+  color: rgb(250, 250, 250);
+}
+
+.nav-links a:hover {
+  color: #e91e63;
+}
+
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar.light .theme-toggle {
+  color: #333;
+}
+
+.navbar.dark .theme-toggle {
+  color: rgb(255, 255, 255);
+}
